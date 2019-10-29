@@ -1,22 +1,21 @@
 #-------------------------------------------------------------------------------
-# Name:        module2
-# Purpose:
+# Name:    test_example.py
 #
-# Author:      evanw
+# Purpose: Test ex1 module.
 #
-# Created:     15-10-2019
-# Copyright:   (c) evanw 2019
-# Licence:     <your licence>
+# Author:  David Viljoen
+#
+# Created: 29/09/2019
 #-------------------------------------------------------------------------------
 
-import string_utlis
-reload(string_utlis)
+import string_utils
+reload(string_utils)
 
 def main():
     """main()"""
-    expected = '--'
-    arg = 'a'
-    actual = string_utlis.get_initials(arg)
+    expected = 'Abc Bbc Cbc/A.B.C.'
+    arg = 'Abc Bbc Cbc'
+    actual = string_utils.get_initials(arg)
     compare_expected_and_actual(arg, expected, actual)
 
 def compare_expected_and_actual(arg, expected, actual):
